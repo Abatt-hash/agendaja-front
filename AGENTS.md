@@ -4,7 +4,7 @@ Rules for contributors and AI agents working in this repository. Run all command
 
 ## Related repository
 
-The backend is a **separate repository**: <https://github.com/IsacFragoso/agendamento-backend> (NestJS API under `/api`). Read its `AGENTS.md` and `ARCHITECTURE.md` before inspecting backend files. Do not guess endpoint paths, field names, or status codes: verify them in the backend controller, DTO, and service. If a task needs a backend change, say so in your summary; do not silently work around the API contract in the UI.
+The backend is a **separate repository**: <https://github.com/Abatt-hash/agendaja-back> (NestJS API under `/api`). Read its `AGENTS.md` and `ARCHITECTURE.md` before inspecting backend files. Do not guess endpoint paths, field names, or status codes: verify them in the backend controller, DTO, and service. If a task needs a backend change, say so in your summary; do not silently work around the API contract in the UI.
 
 ## Source of truth
 
@@ -36,7 +36,7 @@ Before finishing, run lint and build (and tests, if configured).
 
 ## Environment
 
-- API base URL: `VITE_API_BASE_URL`; defaults to `http://localhost:8000/api`. There is no Vite API proxy. The Vite base path is `/` in development and `/agendamento-frontend/` in production builds.
+- API base URL: `VITE_API_BASE_URL`; defaults to `http://localhost:8000/api`. There is no Vite API proxy. The Vite base path is `/` in development and `/agendaja-front/` in production builds.
 - Never commit `.env` files or secrets.
 
 ## Architecture

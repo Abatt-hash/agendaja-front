@@ -1,6 +1,6 @@
 # Frontend architecture
 
-Single-page app for the appointment-booking system (school project). The backend is a separate repository, <https://github.com/IsacFragoso/agendamento-backend>: a NestJS REST API under `/api`.
+Single-page app for the AgendaJá appointment-booking system (school project). The backend is a separate repository, <https://github.com/Abatt-hash/agendaja-back>: a NestJS REST API under `/api`.
 
 **Stack:** React 19, Vite 8, React Router 7, JavaScript/JSX (not TypeScript), plain CSS, `fetch`-based HTTP helpers, an auth context.
 
@@ -86,7 +86,7 @@ The backend stores appointment timestamps in UTC. The UI displays and converts a
 ## 7. Configuration
 
 - API base URL: `VITE_API_BASE_URL`, defaulting to `http://localhost:8000/api`; the frontend has no Vite API proxy.
-- Vite serves from `/` in development and builds with `/agendamento-frontend/` as its base path in production.
+- Vite serves from `/` in development and builds with `/agendaja-front/` as its base path in production.
 - Environment variables are read through `import.meta.env` and must start with `VITE_`. Never put secrets in them; everything in a Vite bundle is public.
 
 ## 8. Testing
@@ -105,7 +105,7 @@ All URLs live in `src/core/router/paths.js`; pages and components never build UR
   - `AppLayout` (sidebar and header) wraps the private pages.
   - Login, register and unsupported-account pages use no shared layout.
 - **Header:** `AppHeader` is constant on all layouts. The back arrow only appears on provider profile and booking routes.
-- **Static assets:** build asset URLs from `import.meta.env.BASE_URL`, never `/images/...`, because production is served from `/agendamento-frontend/`. See `shared/utils/profile-photo.js`.
+- **Static assets:** build asset URLs from `import.meta.env.BASE_URL`, never `/images/...`, because production is served from `/agendaja-front/`. See `shared/utils/profile-photo.js`.
 - **Tests:** add cases to `core/router/paths.test.js` when you add helpers.
 
 ## 10. Adding a feature (checklist)

@@ -1,13 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>agendamento-web</title>
+    <title>AgendaJá | Agenda online para profissionais locais</title>
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      const redirect = new URLSearchParams(window.location.search).get('redirect');
+      if (redirect) {
+        const base = '%BASE_URL%'.replace(/\/$/, '');
+        window.history.replaceState(null, '', base + redirect);
+      }
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

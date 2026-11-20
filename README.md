@@ -1,4 +1,4 @@
-# Frontend de Agendamento
+# AgendaJá — Frontend
 
 Aplicação web SPA para o sistema acadêmico de agendamento, com autenticação, gestão de serviços, agenda de prestadores e solicitações de agendamento. O frontend consome a API REST em um repositório separado.
 
@@ -21,7 +21,7 @@ Aplicação web SPA para o sistema acadêmico de agendamento, com autenticação
 1. Clone este repositório:
 
 	```text
-	https://github.com/IsacFragoso/agendamento-frontend
+	https://github.com/Abatt-hash/agendaja-front
 	```
 
 2. Instale as dependências na raiz do repositório:
@@ -38,7 +38,7 @@ Aplicação web SPA para o sistema acadêmico de agendamento, com autenticação
 
 	Se não for definida, a aplicação usa `http://localhost:8000/api`. Variáveis `VITE_` são incluídas no bundle do navegador; não coloque segredos nelas.
 
-4. Inicie a API backend. Backend: <https://github.com/IsacFragoso/agendamento-backend>.
+4. Inicie a API backend. Backend: <https://github.com/Abatt-hash/agendaja-back>.
 5. Inicie o servidor de desenvolvimento:
 
 	```bash
@@ -102,7 +102,7 @@ src/
 
 ## Repositório relacionado
 
-Backend: <https://github.com/IsacFragoso/agendamento-backend>. O frontend precisa da API backend em execução para autenticação e funcionalidades que acessam dados.
+Backend: <https://github.com/Abatt-hash/agendaja-back>. O frontend precisa da API backend em execução para autenticação e funcionalidades que acessam dados.
 
 ## Fluxo de trabalho da equipe
 
@@ -117,7 +117,7 @@ Abra um pull request para `main` para cada alteração e peça ao outro integran
 
 ---
 
-# Appointment Booking Frontend
+# AgendaJá — Appointment Booking Frontend
 
 This repository contains the single-page web app for the school appointment-booking system, including authentication, service management, provider schedules, and appointment requests. It consumes a REST API maintained in a separate repository.
 
@@ -140,7 +140,7 @@ This repository contains the single-page web app for the school appointment-book
 1. Clone this repository:
 
 	```text
-	https://github.com/IsacFragoso/agendamento-frontend
+	https://github.com/Abatt-hash/agendaja-front
 	```
 
 2. Install dependencies from the repository root:
@@ -157,7 +157,7 @@ This repository contains the single-page web app for the school appointment-book
 
 	If unset, the app uses `http://localhost:8000/api`. `VITE_` variables are included in the browser bundle; do not put secrets in them.
 
-4. Start the backend API. Backend repository: <https://github.com/IsacFragoso/agendamento-backend>.
+4. Start the backend API. Backend repository: <https://github.com/Abatt-hash/agendaja-back>.
 5. Start the development server:
 
 	```bash
@@ -221,7 +221,7 @@ src/
 
 ## Related Repository
 
-Backend: <https://github.com/IsacFragoso/agendamento-backend>. The frontend needs the backend API running for authentication and features that access data.
+Backend: <https://github.com/Abatt-hash/agendaja-back>. The frontend needs the backend API running for authentication and features that access data.
 
 ## Team Workflow
 
